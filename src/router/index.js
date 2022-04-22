@@ -1,11 +1,41 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import SignUp from "../views/SignUp.vue";
+import LogIn from "../views/LogIn.vue";
+import LogOut from "../views/LogOut.vue";
+import AirportView from "../views/AirportView.vue";
+import ChecklistShow from "../views/ChecklistShow.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/signup",
+    name: "SignUp",
+    component: SignUp,
+  },
+  {
+    path: "/login",
+    name: "LogIn",
+    component: LogIn,
+  },
+  {
+    path: "/logout",
+    name: "LogOut",
+    component: LogOut,
+  },
+  {
+    path: "/airport",
+    name: "airport",
+    component: AirportView,
+  },
+  {
+    path: "/checklist/:id",
+    name: "ChecklistShow",
+    component: ChecklistShow,
   },
   {
     path: "/about",

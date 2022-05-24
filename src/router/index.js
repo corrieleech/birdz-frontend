@@ -3,7 +3,6 @@ import HomeView from "../views/HomeView.vue";
 import SignUp from "../views/SignUp.vue";
 import LogIn from "../views/LogIn.vue";
 import LogOut from "../views/LogOut.vue";
-import AirportView from "../views/AirportView.vue";
 import ChecklistShow from "../views/ChecklistShow.vue";
 
 const routes = [
@@ -26,11 +25,6 @@ const routes = [
     path: "/logout",
     name: "LogOut",
     component: LogOut,
-  },
-  {
-    path: "/airport",
-    name: "airport",
-    component: AirportView,
   },
   {
     path: "/checklist/:id",

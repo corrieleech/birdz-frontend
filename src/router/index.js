@@ -4,6 +4,7 @@ import SignUp from "../views/SignUp.vue";
 import LogIn from "../views/LogIn.vue";
 import LogOut from "../views/LogOut.vue";
 import ChecklistShow from "../views/ChecklistShow.vue";
+import ChecklistNew from "../views/ChecklistNew.vue";
 
 const routes = [
   {
@@ -27,7 +28,12 @@ const routes = [
     component: LogOut,
   },
   {
-    path: "/checklist/:id",
+    path: "/checklists/new",
+    name: "ChecklistNew",
+    component: ChecklistNew,
+  },
+  {
+    path: "/checklists/:id",
     name: "ChecklistShow",
     component: ChecklistShow,
   },

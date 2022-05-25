@@ -7,6 +7,7 @@ export default {
   data: function () {
     return {
       message: "Bird Checklist!",
+      birder: localStorage.getItem("birder"),
       likelyBirds: [],
       checklist: {},
     };

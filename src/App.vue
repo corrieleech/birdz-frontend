@@ -27,7 +27,9 @@ export default {
     |
     <router-link to="/logout">Log Out</router-link>
     |
-    <router-link to="/checklist/1">Checklist</router-link>
+    <router-link to="/checklists/1">Checklist</router-link>
+    |
+    <router-link to="/checklists/new">Create</router-link>
   </nav>
   <router-view />
 </template>
